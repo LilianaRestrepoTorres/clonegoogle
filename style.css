@@ -135,6 +135,10 @@ header{
     border: none;
 }
 
+.search-bar input:focus{
+    outline: none;
+}
+
 .search-btns{
     margin-top: 20px;
 }
@@ -230,9 +234,54 @@ footer{
 
 /*Mobile and Tablet*/
 @media only screen and (max-width: 650px){
+    /*Navbar*/
+    .navbar ul{
+        font-size: 10px;
+    }
+
+    .menu-icon,
+    .user-icon span{
+        font-size: 14px;
+    }
+
+    .circle-shadow{
+        height: 30px;
+        width: 30px;
+    }
+
+    /*Logo*/
+    .logo-img{
+        width: 200px;
+    }
+
+
     /*Search bar*/
     .search-bar{
         width: 90%;
+        height: 35px;
+    }
+
+    .search-bar i{
+        font-size: 14px;
+    }
+
+    /*Bottons*/
+    .search-btns button{
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .google-search-btn{
+        width: 120px;
+    }
+
+    .lucky-search-btn{
+        width: 120px;
+    }
+
+    /*Languages*/
+    .language{
+        font-size: 12px;
     }
 
     /*Footer*/
@@ -247,5 +296,9 @@ footer{
     .lower-footer{
         height: 100px;
         flex-direction: column;
+    }
+
+    .lower-left-footer{
+        flex-wrap: wrap;
     }
 }
